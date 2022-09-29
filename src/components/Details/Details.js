@@ -7,14 +7,14 @@ const Details = () => {
 
             <div className="form-control pb-5">
                 <label className="input-group">
-                    <span className='text-sm font-semibold w-[70%]'>Exercise time</span>
-                    <p className="input input-bordered text-center w-[80%]" />
+                    <span className='text-sm font-semibold w-[50%] lg:w-[70%]'>Exercise time</span>
+                    <p className="input input-bordered text-center font-bold w-[80%] flex items-center justify-center">0</p>
                 </label>
             </div>
             <div className="form-control pb-5">
                 <label className="input-group">
-                    <span className='text-sm font-semibold w-[70%]'>Break time</span>
-                    <p className="input input-bordered text-center w-[80%]" />
+                    <span className='text-sm font-semibold w-[50%] lg:w-[70%]'>Break time</span>
+                    <p className="input input-bordered text-center font-bold w-[80%] flex items-center justify-center">0</p>
                 </label>
             </div>
 

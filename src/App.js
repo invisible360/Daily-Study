@@ -6,7 +6,7 @@ import QuestionAns from './components/QuestionAnswer/QuestionAns';
 function App() {
   return (
     <div className="App">
-      <section className='grid grid-cols-4'>
+      <section className='grid grid-cols-2 lg:grid-cols-4'>
         <Main></Main>
         <Aside></Aside>
       </section>
