@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Activity from './Activity';
 
-const Main = () => {
+const Main = (props) => {
     const [activities, setActivities] = useState([]);
 
     useEffect(() => {
@@ -10,6 +10,10 @@ const Main = () => {
             .then(data => setActivities(data))
     }, [])
 
+    /* const timeAdded = (activity) => {
+        console.log(activity);
+    } */
+    const {timeAddingHandler} = props;
 
     return (
         <main className='lg:col-span-3 mx-auto w-[90%]'>
@@ -24,7 +28,11 @@ const Main = () => {
             {/* card section */}
             <section className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
                 {
-                    activities.map(activity => <Activity activity={activity}></Activity>)
+                    activities.map(activity => <Activity 
+                        activity={activity} 
+                        key={activity.id}
+                        timeAddingHandler = {timeAddingHandler}
+                        ></Activity>)
                 }
 
             </section>

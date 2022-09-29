@@ -1,7 +1,14 @@
-import React from 'react';
-
 const Activity = (props) => {
-    const { picture, name, time } = props.activity
+    // console.log(props);
+    const { picture, name, time } = props.activity;
+    const {timeAddingHandler} = props;
+    // console.log(timeAdded);
+
+    /* let [state, setState] = useState('Add to List');
+
+    const added = () => setState ('Item Added'); */
+
+
     return (
         <div>
             <div className="card bg-base-100 drop-shadow-2xl h-full">
@@ -12,7 +19,8 @@ const Activity = (props) => {
                     <h2 className="card-title">{name}</h2>
                     <p>Time Spend: {time} min</p>
                     <div className="card-actions">
-                        <button className="btn btn-md">Add to List</button>
+                        {/* <button onClick={added} className="btn btn-md">{state}</button> */}
+                        <button onClick={()=> timeAddingHandler(time)} className="btn btn-md">Add to List</button>
                     </div>
                 </div>
             </div>
