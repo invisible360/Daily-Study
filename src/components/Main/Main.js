@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import Activity from './Activity';
 
 const Main = () => {
@@ -14,21 +12,22 @@ const Main = () => {
 
 
     return (
-        <main className='col-span-3'>
+        <main className='col-span-3 mx-auto w-[90%]'>
             <header>
-                <FontAwesomeIcon icon={faCoffee} />
-                <h1>Daily Study Activity</h1>
-                <h3>Select today's Practice</h3>
+                <div className='flex items-center pt-10'>
+                    <img className='w-1/12' src="https://chipngo.org/wp-content/uploads/2019/06/education-icon.png" alt="" />
+                    <h1 className='text-4xl font-bold text-gray-600 pl-2'>DAILY-STUDY-ACTIVITY</h1>
+                </div>
+                <h3 className='text-3xl font-semibold py-10'>Select today's Practice</h3>
             </header>
 
             {/* card section */}
             <section className='grid grid-cols-3 gap-5'>
                 {
-                    activities.map (activity => <Activity></Activity>)
+                    activities.map(activity => <Activity activity={activity}></Activity>)
                 }
-                
-            </section>
 
+            </section>
 
         </main>
     );
