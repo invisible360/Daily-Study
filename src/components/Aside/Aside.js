@@ -5,11 +5,12 @@ import Profile from '../Profile/Profile';
 
 
 const Aside = (props) => {
-    const [rest, setRest] = useState (0);
-    // console.log(props.newActivity);
+    // console.log(props);
+    const [rest, setRest] = useState(0);
+    
     const breakTime = (restTime) => {
-        // console.log(restTime);
-        setRest (restTime);
+        localStorage.setItem('rest-time', restTime);
+        setRest(restTime);
     }
     return (
         <div className='col-span-1 bg-violet-200 p-5'>

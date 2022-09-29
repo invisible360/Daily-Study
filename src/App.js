@@ -5,18 +5,19 @@ import Main from './components/Main/Main';
 import QuestionAns from './components/QuestionAnswer/QuestionAns';
 
 function App() {
-const [activity, setActivity] = useState (0);
+  const [activity, setActivity] = useState(0);
 
   const timeAdded = (time) => {
     const newTime = time + activity;
-    setActivity (newTime);
+    setActivity(newTime);
   }
 
   return (
     <div className="App">
+      localStorage.setItem('rest-time', 0);
       <section className='grid grid-cols-2 lg:grid-cols-4'>
-        <Main timeAddingHandler = {timeAdded}></Main>
-        <Aside newActivity ={activity}></Aside>
+        <Main timeAddingHandler={timeAdded}></Main>
+        <Aside newActivity={activity}></Aside>
       </section>
 
       <QuestionAns></QuestionAns>

@@ -1,9 +1,7 @@
 import './Details.css';
 
 const Details = (props) => {
-    // console.log(props.updatedActivity);
 
-    // props.updatedActivity.reduce((current, previous) => setTimer(current + previous.time), 0);
 
     return (
         <div>
@@ -18,7 +16,7 @@ const Details = (props) => {
             <div className="form-control pb-5">
                 <label className="input-group">
                     <span className='text-sm font-semibold w-[50%] lg:w-[70%]'>Break time</span>
-                    <p className="input input-bordered text-center font-bold w-[80%] flex items-center justify-center">{props.rest} Min</p>
+                    <p className="input input-bordered text-center font-bold w-[80%] flex items-center justify-center">{localStorage.getItem('rest-time')} Min</p>
                 </label>
             </div>
 

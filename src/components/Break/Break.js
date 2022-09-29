@@ -8,7 +8,7 @@ const Break = (props) => {
         { id: 4, time: 20 },
 
     ];
-    
+
 
     return (
         <div className='pb-10'>
