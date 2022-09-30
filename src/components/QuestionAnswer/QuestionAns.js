@@ -8,7 +8,9 @@ const QuestionAns = () => {
                 <div className="collapse">
                     <input type="checkbox" className="peer" />
                     <div className="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-                        Click me to show/hide content
+                        1. how Does React Works?
+                        2. Difference between Props and State?
+                        3. when we use useEffet excluding loading data in React?
                     </div>
                     <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
                         <p>hello</p>

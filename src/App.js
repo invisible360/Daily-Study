@@ -14,12 +14,10 @@ function App() {
 
   return (
     <div className="App">
-      localStorage.setItem('rest-time', 0);
       <section className='grid grid-cols-2 lg:grid-cols-4'>
         <Main timeAddingHandler={timeAdded}></Main>
         <Aside newActivity={activity}></Aside>
       </section>
-
       <QuestionAns></QuestionAns>
     </div>
   );
