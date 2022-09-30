@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Details = (props) => {
 
-    const openToast = () => toast("Congratulations! You Completed all Task.");
+    const openToast = () => toast("Congratulations! All task Completed.");
 
     return (
         <div>
@@ -22,7 +22,7 @@ const Details = (props) => {
             <div className="form-control pb-5">
                 <label className="input-group">
                     <span className='text-sm font-semibold w-[50%] lg:w-[70%]'>Break time</span>
-                    <p className="input input-bordered text-center font-bold w-[80%] flex items-center justify-center">{localStorage.getItem('rest-time')}</p>
+                    <p className="input input-bordered text-center font-bold w-[80%] flex items-center justify-center">{localStorage.getItem('rest-time')} Min</p>
                 </label>
             </div>
 
